@@ -13,6 +13,11 @@ export default function Textfrom(props) {
         setText(event.target.value);
 
     }
+    const reverseClick = () => {
+        let netext= text.split('').reverse().join('');
+        setText(netext);
+
+    }
     const [text, setText] = useState('');
 
     return (
@@ -29,6 +34,9 @@ export default function Textfrom(props) {
                 </button>
                 <button type="button" className="btn btn-primary btn-lg mx-3" onClick={handledownClick}>
                     LowwerCase
+                </button>
+                <button type="button" className="btn btn-primary btn-lg mx-3" onClick={reverseClick}>
+                    Reverse Value
                 </button>
             </div>
             <div className="container my-3">
