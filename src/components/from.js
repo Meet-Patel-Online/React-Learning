@@ -22,12 +22,12 @@ export default function Textfrom(props) {
 
     return (
         <>
-            <div className="container">
+            <div className="container"  style={{color: props.mode=== 'light'?'black':'white'}}>
                 <div className="mb-3">
                     <label htmlFor="mybox" className="form-label">
-                        {props.heading}
+                       <h1>{props.heading}</h1> 
                     </label>
-                    <textarea className="form-control" id="mybox" onChange={handleOnChange} value={text} rows="8"></textarea>
+                    <textarea className="form-control" id="mybox" onChange={handleOnChange} style={{backgroundColor: props.mode=== 'dark'?'grey':'white',color: props.mode=== 'light'?'black':'white'}} value={text} rows="8" ></textarea>
                 </div>
                 <button type="button" className="btn btn-primary btn-lg" onClick={handleUpClick}>
                     UpperCase
@@ -39,7 +39,7 @@ export default function Textfrom(props) {
                     Reverse Value
                 </button>
             </div>
-            <div className="container my-3">
+            <div className="container my-3" style={{color: props.mode=== 'light'?'black':'white'}}>
                 <h1>Your Text Here</h1>
                 <p>{text.split(" ").length} Words And {text.length} Letters</p>
                 <p>{0.008 * text.length} Minutes Taken To Read</p>
