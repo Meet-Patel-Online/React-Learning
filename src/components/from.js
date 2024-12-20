@@ -4,10 +4,12 @@ export default function Textfrom(props) {
     const handleUpClick = () => {
         let newtext = text.toUpperCase();
         setText(newtext)
+        props.showAlert("Converted To UpperCase","success")
     }
     const handledownClick = () => {
         let newtext = text.toLowerCase();
         setText(newtext)
+        props.showAlert("Converted To LowerCase","success")
     }
     const handleOnChange = (event) => {
         setText(event.target.value);
@@ -16,6 +18,7 @@ export default function Textfrom(props) {
     const reverseClick = () => {
         let netext= text.split('').reverse().join('');
         setText(netext);
+        props.showAlert("Converted To Reverse Order","success")
 
     }
     const [text, setText] = useState('');
@@ -33,7 +36,7 @@ export default function Textfrom(props) {
                     UpperCase
                 </button>
                 <button type="button" className="btn btn-primary btn-lg mx-3" onClick={handledownClick}>
-                    LowwerCase
+                    LowerCase
                 </button>
                 <button type="button" className="btn btn-primary btn-lg mx-3" onClick={reverseClick}>
                     Reverse Value
