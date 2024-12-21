@@ -5,8 +5,8 @@ import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Textform from "./components/from";
 import Alert from "./components/Alert";
-import Color from "./components/Color";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import Color from "./components/Color";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("light");

@@ -31,7 +31,7 @@ export default function About(props) {
                 <div className="container" >
                     <h1>About Us</h1>
                     <div className="accordion my-3" id="accordionExample">
-                        <div className="accordion-item" style={{backgroundColor: props.mode=== 'dark'?'grey':'white'}}>
+                        <div className="accordion-item" style={{backgroundColor: props.mode=== 'dark'?'#2d2a45':'white'}}>
                             <h2 className="accordion-header">
                                 <button
                                     className="accordion-button"
@@ -40,7 +40,7 @@ export default function About(props) {
                                     data-bs-target="#collapseOne"
                                     aria-expanded="true"
                                     aria-controls="collapseOne"
-                                    style={{backgroundColor: props.mode=== 'dark'?'grey':'white',color: props.mode=== 'light'?'black':'white'}}
+                                    style={{backgroundColor: props.mode=== 'dark'?'#2d2a45':'white',color: props.mode=== 'light'?'black':'white'}}
                                     // style={myStyle}
                                 >
                                     Accordion Item #1
@@ -54,7 +54,7 @@ export default function About(props) {
                                 <div className="accordion-body"
                                 //  style={myStyle}
 
-                                style={{backgroundColor: props.mode=== 'dark'?'grey':'white',color: props.mode=== 'light'?'black':'white'}}
+                                style={{backgroundColor: props.mode=== 'dark'?'#2d2a45':'white',color: props.mode=== 'light'?'black':'white'}}
                                 
                                 >
                                     <strong>This is the first item's accordion body.</strong> It is
@@ -79,7 +79,7 @@ export default function About(props) {
                                     aria-expanded="false"
                                     aria-controls="collapseTwo"
                                     // style={myStyle}
-                                    style={{backgroundColor: props.mode=== 'dark'?'grey':'white',color: props.mode=== 'light'?'black':'white'}}
+                                    style={{backgroundColor: props.mode=== 'dark'?'#2d2a45':'white',color: props.mode=== 'light'?'black':'white'}}
                                 >
                                     Accordion Item #2
                                 </button>
@@ -91,7 +91,7 @@ export default function About(props) {
                             >
                                 <div className="accordion-body"
                                 //  style={myStyle}
-                                style={{backgroundColor: props.mode=== 'dark'?'grey':'white',color: props.mode=== 'light'?'black':'white'}}
+                                style={{backgroundColor: props.mode=== 'dark'?'#2d2a45':'white',color: props.mode=== 'light'?'black':'white'}}
                                  >
                                     <strong>This is the second item's accordion body.</strong> It is
                                     hidden by default, until the collapse plugin adds the
@@ -115,7 +115,7 @@ export default function About(props) {
                                     aria-expanded="false"
                                     aria-controls="collapseThree"
                                     // style={myStyle}
-                                    style={{backgroundColor: props.mode=== 'dark'?'grey':'white',color: props.mode=== 'light'?'black':'white'}}
+                                    style={{backgroundColor: props.mode=== 'dark'?'#2d2a45':'white',color: props.mode=== 'light'?'black':'white'}}
                                 >
                                     Accordion Item #3
                                 </button>
@@ -126,7 +126,7 @@ export default function About(props) {
                                 data-bs-parent="#accordionExample"
                             >
                                 {/* <div className="accordion-body" style={myStyle}></div> */}
-                                <div className="accordion-body"style={{backgroundColor: props.mode=== 'dark'?'grey':'white',color: props.mode=== 'light'?'black':'white'}} >
+                                <div className="accordion-body"style={{backgroundColor: props.mode=== 'dark'?'#2d2a45':'white',color: props.mode=== 'light'?'black':'white'}} >
                                     <strong>This is the third item's accordion body.</strong> It is
                                     hidden by default, until the collapse plugin adds the
                                     appropriate classes that we use to style each element. These
